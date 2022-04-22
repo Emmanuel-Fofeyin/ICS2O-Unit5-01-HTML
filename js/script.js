@@ -8,14 +8,19 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/github-page-pwa/sw.js", {
-    scope: "/github-page-pwa/",
-  })
+  navigator.serviceWorker.register(
+    "/ICS2O-Unit5-01-HTML-Slider-Example/sw.js",
+    {
+      scope: "/ICS2O-Unit5-01-HTML-Slider-Example/",
+    }
+  )
 }
 
 /**
- * This function displays an alert.
+ * This function updates the slider value.
  */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+function updateSliderValue(valueFromSlider) {
+  document.getElementById("slider-value").innerHTML = valueFromSlider
 }
+
+/**
