@@ -19,7 +19,7 @@ jobs:
           # run Prettier and change any code that needs fixing, before next section
           prettier_options: --write **/*.{html,css,js,md}
       - name: Run GitHub Super Linter
-        uses: github/super-linter@master
+        uses: github/super-linter@main
         env:
           VALIDATE_ALL_CODEBASE: true
           VALIDATE_CLANG_FORMAT: false
