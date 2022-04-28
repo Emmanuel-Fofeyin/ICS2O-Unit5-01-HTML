@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,32 +9,11 @@
     <meta name="author" content="Emmanuel-Fofeyin" />
     <meta name="theme-color" content="#FFFFFF" />
     <title>Number Guessing Game</title>
-    <link
-      rel="canonical"
-      href="https://Emmanuel-Fofeyin.github.io/ICS2O-Unit5-01-HTML/"
-    />
+    <link rel="canonical" href="https://Emmanuel-Fofeyin.github.io/ICS2O-Unit5-01-HTML/" />
     <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      media="none"
-      onload="if(media!='all')media='all'"
-    />
-    <noscript
-      ><link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    /></noscript>
-    <link rel="stylesheet" />
-    href="https://code.getmdl.io/1.3.0/material.pink-light_green.min.css""
-    media="none" onload="if(media!='all')media='all'">
-    <noscript
-      ><link
-        rel="stylesheet"
-        href="https://code.getmdl.io/1.3.0/material.pink-light_green.min.css"
-      />
-    </noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></noscript>
+     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-light_green.min.css"" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-light_green.min.css" /> </noscript>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
@@ -52,40 +32,31 @@
         <table>
           <tr>
             <th>
-              <img
-                src="./images/dice.png"
-                alt="triangle"
-                width="75%"
-                height="auto"
-              />
+              <img src="./images/dice.png" alt="triangle" width="75%" height="auto" />
             </th>
           </tr>
         </table>
-        <p>Input Your Guess:</p>
-        <div id="slider-value">Slider's Value: ?</div>
+        <p> Input Your Guess: </p>
+        <div id="slider-value"> 
+          Slider's Value:
+          ?
+        </div>  
         <!-- Slider -->
-        <label>
-          <input
-            id="slider"
-            class="mdl-slider mdl-js-slider"
-            type="range"
-            min="1"
-            max="6"
-            value="2"
-            tabindex="0"
-            onchange="updateSliderValue(this.value)"
-          />
+       <label>
+          <input id = "slider" class="mdl-slider mdl-js-slider" type="range"
+          min="1" max="6" value="2" tabindex="0"
+          onchange = "updateSliderValue(this.value)">
         </label>
         <!-- Raised button with ripple -->
         <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"   
           onclick="guessClicked()"
-        >
+          >
           Input Your Guess!
         </button>
-        <br />
-        <br />
-        <br />
+        <br>
+        <br>
+        <br>
         <div id="user-info">
           <div id="guess-result"></div>
         </div>
